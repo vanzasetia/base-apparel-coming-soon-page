@@ -126,6 +126,91 @@
         >
       </p>
     </noscript>
-    <main id="main"></main>
+    <div class="content">
+      <header class="header">
+        <a href="/" class="header__home">
+          <img
+            src="/images/logo.svg"
+            alt="Base Apparel - Home"
+            class="header__logo"
+        /></a>
+      </header>
+      <main id="main" class="hero">
+        <h1 class="hero__title">We're coming soon</h1>
+        <p class="hero__description">
+          Hello fellow shoppers! We're currently building our new
+          fashion store. Add your email below to stay up-to-date with
+          announcements and our launch deals.
+        </p>
+        <form
+          class="hero__form js-heroForm"
+          name="newsletter"
+          method="POST"
+          netlify-honeypot="bot-field"
+          data-netlify="true"
+        >
+          <p class="hidden" aria-hidden="true">
+            <label for="bot">
+              Don’t fill this out if you’re human:
+              <input id="bot" name="bot-field"
+            /></label>
+          </p>
+          <div class="hero__form-control">
+            <label for="heroEmail" class="hero__input-placeholder"
+              >Email address</label
+            >
+            <input
+              type="email"
+              id="heroEmail"
+              class="hero__input-email js-heroInputEmail"
+              name="email"
+              required="required"
+              placeholder=" "
+              aria-describedby="heroAlert"
+            />
+          </div>
+          <div class="hero__alert-placeholder">
+            <p
+              id="heroAlert"
+              class="hero__alert js-heroAlert"
+              hidden="hidden"
+              aria-live="assertive"
+            >
+              Please provide a valid email
+            </p>
+          </div>
+          <button class="hero__submit-button" type="submit">
+            <img
+              src="/icons/icon-arrow.svg"
+              alt="Submit email"
+              class="hero__arrow-icon"
+              width="12"
+              height="20"
+            />
+          </button>
+        </form>
+      </main>
+    </div>
+    <div class="image">
+      <picture>
+        <source
+          srcset="/images/hero-desktop.webp"
+          type="image/webp"
+          media="(min-width: 90em)"
+        />
+        <source
+          srcset="/images/hero-desktop.jpg"
+          type="image/jpeg"
+          media="(min-width: 90em)"
+        />
+        <source srcset="/images/hero-mobile.webp" type="image/webp" />
+        <img
+          src="/images/hero-mobile.jpg"
+          alt=""
+          class="image__woman"
+          aria-hidden="true"
+        />
+      </picture>
+    </div>
   </body>
 </html>
