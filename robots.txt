@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://baseapparelfrontendmentor.netlify.app/sitemap.xml
