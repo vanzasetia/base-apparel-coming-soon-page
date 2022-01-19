@@ -31,12 +31,12 @@ html {
 }
 
 ::selection {
-  background-color: rgb(22, 95, 204);
+  background-color: $dark-red;
   color: rgb(242, 242, 242);
 }
 
 ::-moz-selection {
-  background-color: rgb(22, 95, 204);
+  background-color: $dark-red;
   color: rgb(242, 242, 242);
 }
 
@@ -181,7 +181,7 @@ br + br {
 
 .skip-content:focus,
 .skip-content:focus-visible {
-  outline: 0.2em dashed rgb(18, 221, 201);
+  outline: 0.2em dashed $dark-red;
   outline-offset: 0.25em;
   transform: translate(0);
 }
