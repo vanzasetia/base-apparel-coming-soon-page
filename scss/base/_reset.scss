@@ -185,3 +185,9 @@ br + br {
   outline-offset: 0.25em;
   transform: translate(0);
 }
+
+.hidden {
+  visibility: hidden;
+  height: 0;
+  width: 0.0625rem;
+}
