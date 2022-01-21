@@ -53,7 +53,7 @@
   z-index: 2;
   border: none;
   border-radius: 2em;
-  box-shadow: 0 15px 20px rgba(198, 110, 110, 0.25);
+  box-shadow: 0 rem(15) rem(20) rgba(198, 110, 110, 0.25);
   background: $second-gradient no-repeat;
   padding: rem(15) rem(28);
 }
