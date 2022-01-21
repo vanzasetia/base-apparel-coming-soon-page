@@ -1,16 +1,8 @@
 @use "../abstracts" as *;
 
 .hero {
-  position: relative;
   padding-top: rem(320);
   text-align: center;
-}
-
-.hero__woman {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: rem(375);
 }
 
 .hero__title {
