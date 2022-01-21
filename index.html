@@ -126,7 +126,7 @@
         >
       </p>
     </noscript>
-    <div class="content">
+    <div class="container">
       <header class="header">
         <a href="/" class="header__home">
           <img
@@ -160,9 +160,6 @@
             /></label>
           </p>
           <div class="hero__form-control">
-            <label for="heroEmail" class="hero__input-placeholder"
-              >Email address</label
-            >
             <input
               type="email"
               id="heroEmail"
@@ -172,6 +169,18 @@
               placeholder=" "
               aria-describedby="heroAlert"
             />
+            <label for="heroEmail" class="hero__input-placeholder"
+              >Email address</label
+            >
+            <button class="hero__submit-button" type="submit">
+              <img
+                src="/icons/icon-arrow.svg"
+                alt="Submit email"
+                class="hero__arrow-icon"
+                width="12"
+                height="20"
+              />
+            </button>
           </div>
           <div class="hero__alert-placeholder">
             <p
@@ -183,38 +192,8 @@
               Please provide a valid email
             </p>
           </div>
-          <button class="hero__submit-button" type="submit">
-            <img
-              src="/icons/icon-arrow.svg"
-              alt="Submit email"
-              class="hero__arrow-icon"
-              width="12"
-              height="20"
-            />
-          </button>
         </form>
       </main>
-    </div>
-    <div class="image">
-      <picture>
-        <source
-          srcset="/images/hero-desktop.webp"
-          type="image/webp"
-          media="(min-width: 90em)"
-        />
-        <source
-          srcset="/images/hero-desktop.jpg"
-          type="image/jpeg"
-          media="(min-width: 90em)"
-        />
-        <source srcset="/images/hero-mobile.webp" type="image/webp" />
-        <img
-          src="/images/hero-mobile.jpg"
-          alt=""
-          class="image__woman"
-          aria-hidden="true"
-        />
-      </picture>
     </div>
   </body>
 </html>
