@@ -411,21 +411,17 @@ textarea {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  *,
-*::before,
-*::after {
-    animation-delay: -1ms !important;
-    animation-duration: 1ms !important;
-    animation-iteration-count: 1 !important;
+  *, *::before, *::after {
     background-attachment: initial !important;
-    scroll-behavior: auto !important;
-    transition-duration: 0s !important;
     transition-delay: 0s !important;
+    transition-duration: 0s !important;
+    animation-duration: 1ms !important;
+    animation-delay: -1ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
   }
 }
-*,
-*::after,
-*::before {
+*, *::after, *::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -457,29 +453,29 @@ html {
  * For more information: https://gist.github.com/ffoodd/000b59f431e3e64e4ce1a24d5bb36034
  */
 .sr-only {
-  border: 0 !important;
+  position: absolute !important;
+  margin: -1px !important;
   -webkit-clip-path: inset(50%) !important;
   clip-path: inset(50%) !important;
-  height: 1px !important;
-  margin: -1px !important;
-  overflow: hidden !important;
+  border: 0 !important;
   padding: 0 !important;
-  position: absolute !important;
   width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
   white-space: nowrap !important;
 }
 
 body {
   display: flex;
   justify-content: center;
-  font: 1rem/1.6 "Josefin Sans", sans-serif;
   background: linear-gradient(135deg, white, #fff5f5) no-repeat 0/0 100%;
+  font: 1rem/1.6 "Josefin Sans", sans-serif;
 }
 
 .container {
+  background: url("../images/hero-mobile.webp") no-repeat top 4.625rem center/100%;
   padding: 2rem;
   max-width: 28.75rem;
-  background: url("../images/hero-mobile.webp") no-repeat top 4.625rem center/100%;
 }
 
 h1 {
@@ -559,10 +555,7 @@ video[autoplay]:not([muted]) {
  *
  * Source: https://github.com/AllThingsSmitty/css-protips#set-font-size-on-form-elements-for-a-better-mobile-experience
  */
-input[type=text],
-input[type=number],
-select,
-textarea {
+input[type=text], input[type=number], select, textarea {
   font-size: 1rem;
 }
 
@@ -600,8 +593,7 @@ br + br {
     transition: transform 0.3s ease 0s;
   }
 }
-.skip-content:focus,
-.skip-content:focus-visible {
+.skip-content:focus, .skip-content:focus-visible {
   outline: 0.2em dashed #d21f1f;
   outline-offset: 0.25em;
   transform: translate(0);
@@ -609,8 +601,8 @@ br + br {
 
 .hidden {
   visibility: hidden;
-  height: 0;
   width: 0.0625rem;
+  height: 0;
 }
 
 .header__home {
@@ -632,18 +624,18 @@ br + br {
 
 .hero__title {
   text-transform: uppercase;
-  font-size: 2.5rem;
   letter-spacing: 0.275em;
+  font-size: 2.5rem;
 }
 
 .hero__title--pink {
-  font-weight: 300;
   color: #ce9898;
+  font-weight: 300;
 }
 
 .hero__description {
-  color: #ce9898;
   margin: 1rem 0;
+  color: #ce9898;
 }
 
 .hero__form-control {
@@ -655,30 +647,30 @@ br + br {
   position: absolute;
   top: 0.9375rem;
   left: 1.5rem;
-  color: #ce9898;
   opacity: 0.5;
+  color: #ce9898;
 }
 
 .hero__input-email {
   display: block;
-  width: 100%;
   border: 0.0625rem solid #ce9898;
+  border-radius: 2em;
   background-color: transparent;
+  padding: 1.5rem;
+  width: 100%;
   height: 3rem;
   font-size: 1em;
-  border-radius: 2em;
-  padding: 1.5rem;
 }
 
 .hero__submit-button {
+  display: inline-block;
   position: absolute;
   top: 0;
   right: 0;
   z-index: 2;
-  display: inline-block;
-  background: linear-gradient(135deg, #f8bfbf, #ee8b8b) no-repeat;
-  padding: 0.9375rem 1.75rem;
-  box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.25);
   border: none;
   border-radius: 2em;
+  box-shadow: 0 15px 20px rgba(198, 110, 110, 0.25);
+  background: linear-gradient(135deg, #f8bfbf, #ee8b8b) no-repeat;
+  padding: 0.9375rem 1.75rem;
 }

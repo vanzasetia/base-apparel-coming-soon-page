@@ -1,22 +1,18 @@
 @use "../abstracts" as *;
 
 @media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation-delay: -1ms !important;
-    animation-duration: 1ms !important;
-    animation-iteration-count: 1 !important;
+  *, *::before, *::after {
     background-attachment: initial !important;
-    scroll-behavior: auto !important;
-    transition-duration: 0s !important;
     transition-delay: 0s !important;
+    transition-duration: 0s !important;
+    animation-duration: 1ms !important;
+    animation-delay: -1ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
   }
 }
 
-*,
-*::after,
-*::before {
+*, *::after, *::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -48,30 +44,30 @@ html {
  * For more information: https://gist.github.com/ffoodd/000b59f431e3e64e4ce1a24d5bb36034
  */
 .sr-only {
-  border: 0 !important;
-  -webkit-clip-path: inset(50%) !important;
-  clip-path: inset(50%) !important;
-  height: 1px !important;
-  margin: -1px !important;
-  overflow: hidden !important;
-  padding: 0 !important;
   position: absolute !important;
+  margin: -1px !important;
+  -webkit-clip-path: inset(50%) !important;
+          clip-path: inset(50%) !important;
+  border: 0 !important;
+  padding: 0 !important;
   width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
   white-space: nowrap !important;
 }
 
 body {
   display: flex;
   justify-content: center;
-  font: #{rem(16)}/ 1.6 "Josefin Sans", sans-serif;
   background: $first-gradient no-repeat 0/0 100%;
+  font: #{rem(16)}/ 1.6 "Josefin Sans", sans-serif;
 }
 
 .container {
+  background: url("../images/hero-mobile.webp") no-repeat top rem(74)
+  center/100%;
   padding: rem(32);
   max-width: rem(460);
-  background: url("../images/hero-mobile.webp") no-repeat top rem(74)
-    center/100%;
 }
 
 h1 {
@@ -151,10 +147,7 @@ video[autoplay]:not([muted]) {
  *
  * Source: https://github.com/AllThingsSmitty/css-protips#set-font-size-on-form-elements-for-a-better-mobile-experience
  */
-input[type="text"],
-input[type="number"],
-select,
-textarea {
+input[type="text"], input[type="number"], select, textarea {
   font-size: 1rem;
 }
 
@@ -193,8 +186,7 @@ br + br {
   }
 }
 
-.skip-content:focus,
-.skip-content:focus-visible {
+.skip-content:focus, .skip-content:focus-visible {
   outline: 0.2em dashed $dark-red;
   outline-offset: 0.25em;
   transform: translate(0);
@@ -202,6 +194,6 @@ br + br {
 
 .hidden {
   visibility: hidden;
-  height: 0;
   width: 0.0625rem;
+  height: 0;
 }
