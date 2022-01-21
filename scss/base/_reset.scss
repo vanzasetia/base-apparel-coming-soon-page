@@ -61,7 +61,21 @@ html {
 }
 
 body {
-  font: 1rem/1.6 "Josefin Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  font: #{rem(16)}/ 1.6 "Josefin Sans", sans-serif;
+  background: $first-gradient no-repeat 0/0 100%;
+}
+
+.container {
+  padding: rem(32);
+  max-width: rem(460);
+  background: url("../images/hero-mobile.webp") no-repeat top rem(74)
+    center/100%;
+}
+
+h1 {
+  line-height: 1.05;
 }
 
 p {
