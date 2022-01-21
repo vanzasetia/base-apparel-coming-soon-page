@@ -610,16 +610,8 @@ br + br {
 }
 
 .hero {
-  position: relative;
   padding-top: 20rem;
   text-align: center;
-}
-
-.hero__woman {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 23.4375rem;
 }
 
 .hero__title {
@@ -670,7 +662,7 @@ br + br {
   z-index: 2;
   border: none;
   border-radius: 2em;
-  box-shadow: 0 15px 20px rgba(198, 110, 110, 0.25);
+  box-shadow: 0 0.9375rem 1.25rem rgba(198, 110, 110, 0.25);
   background: linear-gradient(135deg, #f8bfbf, #ee8b8b) no-repeat;
   padding: 0.9375rem 1.75rem;
 }
