@@ -470,7 +470,20 @@ html {
 }
 
 body {
+  display: flex;
+  justify-content: center;
   font: 1rem/1.6 "Josefin Sans", sans-serif;
+  background: linear-gradient(135deg, white, #fff5f5) no-repeat 0/0 100%;
+}
+
+.container {
+  padding: 2rem;
+  max-width: 28.75rem;
+  background: url("../images/hero-mobile.webp") no-repeat top 4.625rem center/100%;
+}
+
+h1 {
+  line-height: 1.05;
 }
 
 p {
@@ -592,4 +605,80 @@ br + br {
   outline: 0.2em dashed #d21f1f;
   outline-offset: 0.25em;
   transform: translate(0);
+}
+
+.hidden {
+  visibility: hidden;
+  height: 0;
+  width: 0.0625rem;
+}
+
+.header__home {
+  display: inline-block;
+}
+
+.hero {
+  position: relative;
+  padding-top: 20rem;
+  text-align: center;
+}
+
+.hero__woman {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 23.4375rem;
+}
+
+.hero__title {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  letter-spacing: 0.275em;
+}
+
+.hero__title--pink {
+  font-weight: 300;
+  color: #ce9898;
+}
+
+.hero__description {
+  color: #ce9898;
+  margin: 1rem 0;
+}
+
+.hero__form-control {
+  position: relative;
+  margin: 1rem 0;
+}
+
+.hero__input-placeholder {
+  position: absolute;
+  top: 0.9375rem;
+  left: 1.5rem;
+  color: #ce9898;
+  opacity: 0.5;
+}
+
+.hero__input-email {
+  display: block;
+  width: 100%;
+  border: 0.0625rem solid #ce9898;
+  background-color: transparent;
+  height: 3rem;
+  font-size: 1em;
+  border-radius: 2em;
+  padding: 1.5rem;
+}
+
+.hero__submit-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: inline-block;
+  background: linear-gradient(135deg, #f8bfbf, #ee8b8b) no-repeat;
+  padding: 0.9375rem 1.75rem;
+  box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.25);
+  border: none;
+  border-radius: 2em;
 }
