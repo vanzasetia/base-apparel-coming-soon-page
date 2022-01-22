@@ -45,6 +45,12 @@
   font-size: 1em;
 }
 
+.hero__input-email--error {
+  border-color: $soft-red;
+  background: url("../icons/icon-error.svg") right rem(72) center
+    no-repeat;
+}
+
 .hero__submit-button {
   display: inline-block;
   position: absolute;
