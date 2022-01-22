@@ -648,10 +648,19 @@ br + br {
   border: 0.0625rem solid #ce9898;
   border-radius: 2em;
   background-color: transparent;
-  padding: 1.5rem;
+  padding: 1.5rem 6.25rem 1.5rem 1.5rem;
   width: 100%;
   height: 3rem;
   font-size: 1em;
+}
+
+.hero__input-email:not(:placeholder-shown) ~ .hero__input-placeholder {
+  opacity: 0;
+}
+
+.hero__input-email--error {
+  border-color: #f96262;
+  background: url("../icons/icon-error.svg") right 4.5rem center no-repeat;
 }
 
 .hero__submit-button {
@@ -665,4 +674,17 @@ br + br {
   box-shadow: 0 0.9375rem 1.25rem rgba(198, 110, 110, 0.25);
   background: linear-gradient(135deg, #f8bfbf, #ee8b8b) no-repeat;
   padding: 0.9375rem 1.75rem;
+  cursor: pointer;
+}
+
+.hero__alert {
+  text-align: left;
+  color: #f96262;
+  margin-left: 1.5rem;
+}
+
+.hero__alert {
+  color: #f96262;
+  text-align: left;
+  margin-left: 1.5rem;
 }
