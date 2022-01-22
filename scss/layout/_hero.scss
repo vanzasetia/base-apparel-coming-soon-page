@@ -45,6 +45,11 @@
   font-size: 1em;
 }
 
+.hero__input-email:not(:placeholder-shown)
+  ~ .hero__input-placeholder {
+  opacity: 0;
+}
+
 .hero__input-email--error {
   border-color: $soft-red;
   background: url("../icons/icon-error.svg") right rem(72) center
