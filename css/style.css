@@ -470,6 +470,7 @@ body {
   justify-content: center;
   background: linear-gradient(135deg, white, #fff5f5) no-repeat 0/0 100%;
   font: 1rem/1.6 "Josefin Sans", sans-serif;
+  color: #423a3a;
 }
 
 .container {
@@ -608,6 +609,10 @@ br + br {
 .header__home {
   display: inline-block;
 }
+.header__home:focus-visible, .header__home:focus {
+  outline: 0.1875rem dotted #d21f1f;
+  outline-offset: 0.3125rem;
+}
 
 .hero {
   padding-top: 20rem;
@@ -652,6 +657,11 @@ br + br {
   width: 100%;
   height: 3rem;
   font-size: 1em;
+  color: inherit;
+}
+.hero__input-email:focus-visible, .hero__input-email:focus {
+  outline: 0.1875rem dotted #d21f1f;
+  outline-offset: 0.3125rem;
 }
 
 .hero__input-email:not(:placeholder-shown) ~ .hero__input-placeholder {
@@ -675,16 +685,29 @@ br + br {
   background: linear-gradient(135deg, #f8bfbf, #ee8b8b) no-repeat;
   padding: 0.9375rem 1.75rem;
   cursor: pointer;
+  overflow: hidden;
+}
+.hero__submit-button:focus-visible, .hero__submit-button:focus {
+  outline: 0.1875rem dotted #d21f1f;
+  outline-offset: 0.3125rem;
+}
+
+.hero__submit-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+
+.hero__submit-button:hover::after {
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .hero__alert {
   text-align: left;
   color: #f96262;
-  margin-left: 1.5rem;
-}
-
-.hero__alert {
-  color: #f96262;
-  text-align: left;
   margin-left: 1.5rem;
 }
