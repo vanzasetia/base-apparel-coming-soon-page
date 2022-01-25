@@ -43,6 +43,8 @@
   width: 100%;
   height: rem(48);
   font-size: 1em;
+
+  @include focus-visible($dark-red);
 }
 
 .hero__input-email:not(:placeholder-shown)
@@ -69,6 +71,8 @@
   padding: rem(15) rem(28);
   cursor: pointer;
   overflow: hidden;
+
+  @include focus-visible($dark-red);
 }
 
 .hero__submit-button::after {
