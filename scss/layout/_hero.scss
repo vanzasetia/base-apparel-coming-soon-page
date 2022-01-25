@@ -43,6 +43,7 @@
   width: 100%;
   height: rem(48);
   font-size: 1em;
+  color: inherit;
 
   @include focus-visible($dark-red);
 }
