@@ -59,9 +59,14 @@ html {
 body {
   display: flex;
   justify-content: center;
-  background: $first-gradient no-repeat 0/0 100%;
+  background: linear-gradient(
+      135deg,
+      rgb(255, 255, 255),
+      rgb(255, 245, 245)
+    )
+    no-repeat 0/0 100%;
   font: #{rem(16)}/ 1.6 "Josefin Sans", sans-serif;
-  color: $dark-grayish-red;
+  color: rgb(66, 58, 58);
 }
 
 .container {

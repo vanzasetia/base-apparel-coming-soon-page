@@ -1,23 +1,11 @@
-// Default style that I currently use on this project
-$black: rgb(17, 17, 17) !default;
-$white: rgb(242, 242, 242) !default;
-
 // Colors
 
 /// Primary
 $desaturated-red: rgb(206, 152, 152);
 $soft-red: rgb(249, 98, 98);
 
-/// Neutral
-$dark-grayish-red: rgb(66, 58, 58);
-
 /// Custom
 $dark-red: rgb(210, 31, 31);
-$pure-white: rgb(255, 255, 255);
-
-/// Gradient
-$first-gradient: linear-gradient(135deg, $pure-white, rgb(255, 245, 245));
-$second-gradient: linear-gradient(135deg, rgb(248, 191, 191), rgb(238, 139, 139));
 
 // Breakpoints
 // Note: If you user font-size setting is 16px, then this 'em' is equal to this in 'px'
