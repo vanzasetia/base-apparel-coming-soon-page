@@ -5,3 +5,9 @@
 
   @include focus-visible($dark-red);
 }
+
+.header__logo {
+  @include breakpoint-up("tiny") {
+    width: rem(158);
+  }
+}
