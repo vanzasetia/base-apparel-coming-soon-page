@@ -104,6 +104,10 @@
   background-color: rgb(255, 255, 255, 0.5);
 }
 
+.hero__alert-placeholder {
+  height: rem(30);
+}
+
 .hero__alert {
   text-align: left;
   color: $soft-red;
