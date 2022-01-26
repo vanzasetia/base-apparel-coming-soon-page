@@ -34,11 +34,15 @@
 .hero__form-control {
   position: relative;
   margin: rem(16) 0;
+
+  @include breakpoint-up("tiny") {
+    max-width: rem(440);
+  }
 }
 
 .hero__input-placeholder {
   position: absolute;
-  top: rem(15);
+  top: rem(17);
   left: rem(24);
   opacity: 0.5;
   color: $desaturated-red;
@@ -51,11 +55,14 @@
   background-color: transparent;
   padding: rem(24) rem(100) rem(24) rem(24);
   width: 100%;
-  height: rem(48);
+  height: rem(56);
   font-size: 1em;
   color: inherit;
 
   @include focus-visible($dark-red);
+  @include breakpoint-up("tiny") {
+    padding-right: rem(160);
+  }
 }
 
 .hero__input-email:not(:placeholder-shown)
@@ -67,6 +74,10 @@
   border-color: $soft-red;
   background: url("../icons/icon-error.svg") right rem(72) center
     no-repeat;
+
+  @include breakpoint-up("tiny") {
+    background-position: right rem(120) center;
+  }
 }
 
 .hero__submit-button {
@@ -84,11 +95,14 @@
       rgb(238, 139, 139)
     )
     no-repeat;
-  padding: rem(15) rem(28);
+  padding: rem(19) rem(28);
   cursor: pointer;
   overflow: hidden;
 
   @include focus-visible($dark-red);
+  @include breakpoint-up("tiny") {
+    padding: rem(19) rem(46);
+  }
 }
 
 .hero__submit-button::after {
