@@ -1,24 +1,30 @@
 (function () {
   "use strict";
   const heroForm = document.querySelector(".js-heroForm");
+  const heroAlert = document.querySelector(".js-heroAlert");
+  const heroInputEmail = document.querySelector(".js-heroInputEmail");
+  const heroInputEmailClassName = heroInputEmail.classList[0];
 
-  const showAlert = emailInput => {
-    const heroAlert = document.querySelector(".js-heroAlert");
-    const inputClassName = emailInput.classList[0];
-
-    emailInput.classList.add(`${inputClassName}--error`);
+  const showAlert = () => {
+    heroInputEmail.classList.add(`${heroInputEmailClassName}--error`);
+    heroAlert.setAttribute("role", "alert");
     heroAlert.removeAttribute("hidden");
   };
-  const validateEmail = e => {
-    const heroInputEmail = document.querySelector(
-      ".js-heroInputEmail"
+  const hideAlert = () => {
+    heroInputEmail.classList.remove(
+      `${heroInputEmailClassName}--error`
     );
+    heroAlert.removeAttribute("role", "alert");
+    heroAlert.setAttribute("hidden", "");
+  };
+  const validateEmail = e => {
     const email = heroInputEmail.value;
     const emailValidation =
       /^(?:[a-z0-9\.]){2,30}@{1}(?:[a-z0-9-]){2,30}\.{1}(?:[a-z0-9]){2,3}(\.?((?:[a-z0-9]){2,3}))?$/;
     if (!emailValidation.test(email)) {
       e.preventDefault();
-      showAlert(heroInputEmail);
+      showAlert();
+      setTimeout(hideAlert, 3000);
     }
   };
 
