@@ -1,9 +1,7 @@
 @use "../abstracts" as *;
 
 .header__home {
-  display: inline-block;
-
-  @include focus-visible($dark-red);
+  display: inline-block;@include focus-visible($dark-red);
 }
 
 .header__logo {
