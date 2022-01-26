@@ -7,6 +7,7 @@
   @include breakpoint-up("tiny") {
     margin-top: rem(136);
     text-align: left;
+    max-width: rem(460);
   }
 }
 
