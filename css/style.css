@@ -466,17 +466,52 @@ html {
 }
 
 body {
-  display: flex;
-  justify-content: center;
   background: linear-gradient(135deg, white, #fff5f5) no-repeat 0/0 100%;
   font: 1rem/1.6 "Josefin Sans", sans-serif;
   color: #423a3a;
+  min-height: 100vh;
+}
+@media screen and (min-width: 73.75em) {
+  body {
+    background-image: url("../images/bg-pattern-desktop.svg"), linear-gradient(135deg, white, #fff5f5);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    font-size: 1.125rem;
+  }
 }
 
 .container {
+  display: flex;
   background: url("../images/hero-mobile.webp") no-repeat top 4.625rem center/100%;
+  margin: 0 auto;
   padding: 2rem;
   max-width: 28.75rem;
+  overflow: hidden;
+}
+@media screen and (min-width: 73.75em) {
+  .container {
+    padding: 0;
+    position: relative;
+    background: none;
+    justify-content: flex-start;
+    max-width: 90rem;
+  }
+  .container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: url("../images/hero-desktop.webp") no-repeat top right/100%;
+  }
+}
+
+@media screen and (min-width: 73.75em) {
+  .container__desktop {
+    flex-basis: 50%;
+    padding: 4.6875rem;
+  }
 }
 
 h1 {
@@ -614,15 +649,32 @@ br + br {
   outline-offset: 0.3125rem;
 }
 
+@media screen and (min-width: 73.75em) {
+  .header__logo {
+    width: 9.875rem;
+  }
+}
+
 .hero {
-  padding-top: 20rem;
+  margin-top: 20rem;
   text-align: center;
+}
+@media screen and (min-width: 73.75em) {
+  .hero {
+    margin-top: 8.5rem;
+    text-align: left;
+  }
 }
 
 .hero__title {
   text-transform: uppercase;
   letter-spacing: 0.275em;
   font-size: 2.5rem;
+}
+@media screen and (min-width: 73.75em) {
+  .hero__title {
+    font-size: 4rem;
+  }
 }
 
 .hero__title--pink {
