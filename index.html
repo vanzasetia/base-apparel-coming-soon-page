@@ -127,73 +127,75 @@
       </p>
     </noscript>
     <div class="container">
-      <header class="header">
-        <a href="/" class="header__home">
-          <img
-            src="/images/logo.svg"
-            alt="Base Apparel - Home"
-            class="header__logo"
-            width="100"
-            height="21"
-        /></a>
-      </header>
-      <main id="main" class="hero">
-        <h1 class="hero__title">
-          <span class="hero__title--pink">We're</span> coming soon
-        </h1>
-        <p class="hero__description">
-          Hello fellow shoppers! We're currently building our new
-          fashion store. Add your email below to stay up-to-date with
-          announcements and our launch deals.
-        </p>
-        <form
-          class="hero__form js-heroForm"
-          name="newsletter"
-          method="POST"
-          netlify-honeypot="bot-field"
-          data-netlify="true"
-        >
-          <p class="hidden" aria-hidden="true">
-            <label for="bot">
-              Don’t fill this out if you’re human:
-              <input id="bot" name="bot-field"
-            /></label>
+      <div class="container__desktop">
+        <header class="header">
+          <a href="/" class="header__home">
+            <img
+              src="/images/logo.svg"
+              alt="Base Apparel - Home"
+              class="header__logo"
+              width="100"
+              height="21"
+          /></a>
+        </header>
+        <main id="main" class="hero">
+          <h1 class="hero__title">
+            <span class="hero__title--pink">We're</span> coming soon
+          </h1>
+          <p class="hero__description">
+            Hello fellow shoppers! We're currently building our new
+            fashion store. Add your email below to stay up-to-date
+            with announcements and our launch deals.
           </p>
-          <div class="hero__form-control">
-            <input
-              type="email"
-              id="heroEmail"
-              class="hero__input-email js-heroInputEmail"
-              name="email"
-              required="required"
-              placeholder=" "
-              aria-describedby="heroAlert"
-            />
-            <label for="heroEmail" class="hero__input-placeholder"
-              >Email address</label
-            >
-            <button class="hero__submit-button" type="submit">
-              <img
-                src="/icons/icon-arrow.svg"
-                alt="Submit email"
-                class="hero__arrow-icon"
-                width="12"
-                height="20"
-              />
-            </button>
-          </div>
-          <div class="hero__alert-placeholder">
-            <p
-              id="heroAlert"
-              class="hero__alert js-heroAlert"
-              hidden
-              aria-live="assertive"
-            >
-              Please provide a valid email
+          <form
+            class="hero__form js-heroForm"
+            name="newsletter"
+            method="POST"
+            netlify-honeypot="bot-field"
+            data-netlify="true"
+          >
+            <p class="hidden" aria-hidden="true">
+              <label for="bot">
+                Don’t fill this out if you’re human:
+                <input id="bot" name="bot-field"
+              /></label>
             </p>
-          </div>
-        </form>
-      </main>
+            <div class="hero__form-control">
+              <input
+                type="email"
+                id="heroEmail"
+                class="hero__input-email js-heroInputEmail"
+                name="email"
+                required="required"
+                placeholder=" "
+                aria-describedby="heroAlert"
+              />
+              <label for="heroEmail" class="hero__input-placeholder"
+                >Email address</label
+              >
+              <button class="hero__submit-button" type="submit">
+                <img
+                  src="/icons/icon-arrow.svg"
+                  alt="Submit email"
+                  class="hero__arrow-icon"
+                  width="12"
+                  height="20"
+                />
+              </button>
+            </div>
+            <div class="hero__alert-placeholder">
+              <p
+                id="heroAlert"
+                class="hero__alert js-heroAlert"
+                hidden
+                aria-live="assertive"
+              >
+                Please provide a valid email
+              </p>
+            </div>
+          </form>
+        </main>
+      </div>
     </div>
   </body>
 </html>
