@@ -14,6 +14,10 @@
   text-transform: uppercase;
   letter-spacing: 0.275em;
   font-size: rem(40);
+
+  @include breakpoint-up("tiny") {
+    font-size: rem(64);
+  }
 }
 
 .hero__title--pink {
