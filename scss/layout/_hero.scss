@@ -1,8 +1,13 @@
 @use "../abstracts" as *;
 
 .hero {
-  padding-top: rem(320);
+  margin-top: rem(320);
   text-align: center;
+
+  @include breakpoint-up("tiny") {
+    margin-top: rem(136);
+    text-align: left;
+  }
 }
 
 .hero__title {
