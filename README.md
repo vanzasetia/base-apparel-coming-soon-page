@@ -22,7 +22,7 @@
     </a>
 </p>
 
-# 
+# Base Apparel Coming Soon Page Challenge
 
 ## Table of contents
 - [Overview](#overview)
