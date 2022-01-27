@@ -14,7 +14,9 @@
 .hero__title {
   text-transform: uppercase;
   letter-spacing: 0.275em;
-  font-size: rem(40);@include breakpoint-up("tiny") {
+  font-size: rem(40);
+
+  @include breakpoint-up("tiny") {
     font-size: rem(64);
   }
 }
@@ -31,7 +33,9 @@
 
 .hero__form-control {
   position: relative;
-  margin: rem(16) 0;@include breakpoint-up("tiny") {
+  margin: rem(16) 0;
+
+  @include breakpoint-up("tiny") {
     max-width: rem(440);
   }
 }
@@ -53,19 +57,26 @@
   width: 100%;
   height: rem(56);
   color: inherit;
-  font-size: 1em;@include focus-visible($dark-red);@include breakpoint-up("tiny") {
+  font-size: 1em;
+
+  @include focus-visible($dark-red);
+
+  @include breakpoint-up("tiny") {
     padding-right: rem(160);
   }
 }
 
-.hero__input-email:not(:placeholder-shown) ~ .hero__input-placeholder {
+.hero__input-email:not(:placeholder-shown)
+  ~ .hero__input-placeholder {
   opacity: 0;
 }
 
 .hero__input-email--error {
   border-color: $soft-red;
   background: url("../icons/icon-error.svg") right rem(72) center
-  no-repeat;@include breakpoint-up("tiny") {
+    no-repeat;
+
+  @include breakpoint-up("tiny") {
     background-position: right rem(120) center;
   }
 }
@@ -80,14 +91,18 @@
   border-radius: 2em;
   box-shadow: 0 rem(15) rem(20) rgba(198, 110, 110, 0.25);
   background: linear-gradient(
-  135deg,
-  rgb(248, 191, 191),
-  rgb(238, 139, 139)
-  )
-  no-repeat;
+      135deg,
+      rgb(248, 191, 191),
+      rgb(238, 139, 139)
+    )
+    no-repeat;
   cursor: pointer;
   padding: rem(19) rem(28);
-  overflow: hidden;@include focus-visible($dark-red);@include breakpoint-up("tiny") {
+  overflow: hidden;
+
+  @include focus-visible($dark-red);
+
+  @include breakpoint-up("tiny") {
     padding: rem(19) rem(46);
   }
 }

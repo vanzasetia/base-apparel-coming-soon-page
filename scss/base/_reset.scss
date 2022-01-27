@@ -1,7 +1,9 @@
 @use "../abstracts" as *;
 
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
+  *,
+  *::before,
+  *::after {
     background-attachment: initial !important;
     transition-delay: 0s !important;
     transition-duration: 0s !important;
@@ -12,7 +14,9 @@
   }
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -47,7 +51,7 @@ html {
   position: absolute !important;
   margin: -1px !important;
   -webkit-clip-path: inset(50%) !important;
-          clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
   border: 0 !important;
   padding: 0 !important;
   width: 1px !important;
@@ -58,16 +62,18 @@ html {
 
 body {
   background: linear-gradient(
-  135deg,
-  rgb(255, 255, 255),
-  rgb(255, 245, 245)
-  )
-  no-repeat 0/0 100%;
+      135deg,
+      rgb(255, 255, 255),
+      rgb(255, 245, 245)
+    )
+    no-repeat 0/0 100%;
   min-height: 100vh;
   color: rgb(66, 58, 58);
-  font: #{rem(16)}/ 1.6 "Josefin Sans", sans-serif;@include breakpoint-up("tiny") {
+  font: #{rem(16)}/ 1.6 "Josefin Sans", sans-serif;
+
+  @include breakpoint-up("tiny") {
     background-image: url("../images/bg-pattern-desktop.svg"),
-    linear-gradient(135deg, rgb(255, 255, 255), rgb(255, 245, 245));
+      linear-gradient(135deg, rgb(255, 255, 255), rgb(255, 245, 245));
     background-repeat: no-repeat;
     background-size: auto 100%;
     font-size: rem(18);
@@ -97,7 +103,7 @@ body {
       top: 0;
       right: 0;
       background: url("../images/hero-desktop.webp") no-repeat top
-      right/100%;
+        right/100%;
       width: 50%;
       height: 100%;
     }
@@ -188,7 +194,10 @@ video[autoplay]:not([muted]) {
  *
  * Source: https://github.com/AllThingsSmitty/css-protips#set-font-size-on-form-elements-for-a-better-mobile-experience
  */
-input[type="text"], input[type="number"], select, textarea {
+input[type="text"],
+input[type="number"],
+select,
+textarea {
   font-size: 1rem;
 }
 
@@ -227,7 +236,8 @@ br + br {
   }
 }
 
-.skip-content:focus, .skip-content:focus-visible {
+.skip-content:focus,
+.skip-content:focus-visible {
   outline: 0.2em dashed $dark-red;
   outline-offset: 0.25em;
   transform: translate(0);
