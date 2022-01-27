@@ -77,11 +77,13 @@ body {
 .container {
   display: flex;
   margin: 0 auto;
-  background: url("../images/hero-mobile.webp") no-repeat top rem(74)
-  center/100%;
+  background: url("../images/hero-mobile.webp") no-repeat top rem(90)
+    center/100%;
   padding: rem(32);
-  max-width: rem(460);
-  overflow: hidden;@include breakpoint-up("tiny") {
+  max-width: rem(500);
+  overflow: hidden;
+
+  @include breakpoint-up("tiny") {
     position: relative;
     justify-content: flex-start;
     background: none;

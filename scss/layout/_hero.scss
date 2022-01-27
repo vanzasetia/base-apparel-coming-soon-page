@@ -1,8 +1,10 @@
 @use "../abstracts" as *;
 
 .hero {
-  margin-top: rem(320);
-  text-align: center;@include breakpoint-up("tiny") {
+  margin-top: rem(400);
+  text-align: center;
+
+  @include breakpoint-up("tiny") {
     margin-top: rem(136);
     max-width: rem(460);
     text-align: left;
