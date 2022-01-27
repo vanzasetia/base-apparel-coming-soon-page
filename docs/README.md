@@ -19,17 +19,17 @@ This the place where I document everything about this project. Feel free to take
 # NPM Packages
 
 ```txt
-+-- autoprefixer@10.4.2
-+-- browser-sync@2.27.7
-+-- csscomb@4.3.0
-+-- live-server@1.2.1
-+-- markserv@1.17.4
-+-- npm-run-all@4.1.5
-+-- npm@8.3.1
-+-- postcss-cli@9.1.0
-+-- prettier@2.5.1
-+-- sass@1.48.0
-`-- semistandard@16.0.1
+├── autoprefixer@10.4.2
+├── browser-sync@2.27.7
+├── csscomb@4.3.0
+├── live-server@1.2.1
+├── markserv@1.17.4
+├── npm-run-all@4.1.5
+├── npm@8.3.1
+├── postcss-cli@9.1.0
+├── prettier@2.5.1
+├── sass@1.48.0
+└── semistandard@16.0.1
 ```
 
 ## Colors
