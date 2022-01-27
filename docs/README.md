@@ -55,9 +55,20 @@ These are the guidelines that I follow when I write the code.
 > Note: I follow all HTML guidelines. For the Sass and JavaScript, I follow some of them.
 
 ### Web Doc
+- [Regular Expression - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
+- [ARIA: alert role - Accessibility | MDN](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Alert_Role)
+- [aria-live - Accessibility | MDN](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-live)
+- [setTimeout() - Web APIs | MDN - Mozilla](https://developer.mozilla.org/en-US/docs/Web/API/setTimeout)
 
 ### Articles
+- [Ultimate Guide to Validating Emails with Regex (2021)](https://www.abstractapi.com/tools/email-regex-guide)
 
 ### Tools
+- [font-face generator](https://everythingfonts.com/font-face) - Generate the `woff2` and `woff` from `ttf`
+- [Favicon Generator for perfect icons on all browsers](https://realfavicongenerator.net/)
+- [0to255](https://www.0to255.com/) - Generate colors for `::selection` and `:focus-visible`.
+- [Online WebP Converter](https://ezgif.com/jpg-to-webp)
+- [Site Shot](https://www.site-shot.com/) - take screenshot of my solution.
+- [Canva](https://canva.com) - design the banner.
 
 ### Validations
