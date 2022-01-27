@@ -45,7 +45,7 @@
 ### Introduction
 Welcome to the `README.md` of this repo! The purpose of creating this project is to sharpen my coding skill.
 
-In this file I'm going to tell you everything, start from tools that I used, and much more.
+In this file I'm going to tell you everything, starting from tools that I used, and much more.
 
 That's it for the introduction and **happy reading!**
 
@@ -56,7 +56,7 @@ My users should be able to:
 
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
-- Comfortably navigate the website using screen reader and keyboard
+- Comfortably navigate the website using a screen-reader and keyboard
 - Receive an error message when the form is submitted if:
   - The input field is empty
   - The email address is not formatted correctly
@@ -201,7 +201,7 @@ This project is licensed under the terms of the MIT license.
 
 For those of you who are wondering, why do I need to license this? 
 - Well, first it's free 😁.
-- Second I checked this [Choose license website](https://choosealicense.com/) to help me chose a license.
+- Second I checked this [Choose license website](https://choosealicense.com/) to help me choose a license.
 - The last reason, if I don't want to choose a license, then [here's what gonna happen](https://choosealicense.com/no-permission/).
 
 ## References
