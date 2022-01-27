@@ -83,6 +83,7 @@ Mobile
 - [BEM (Block, Element, Modifier)](https://sparkbox.com/foundry/bem_by_example) Class *Naming Convention*
 - [Sass](https://sass-lang.com/)
 - Vanilla JavaScript
+- [RegExr](https://regexr.com/)
 - CSS Flexbox
 - Mobile-first workflow
 - [Normalize.css](https://necolas.github.io/normalize.css/)
@@ -180,6 +181,7 @@ Also, I used the `^` and `$` in the Regex, so that **the user must follow the pa
 So, that's for the story! Hopefully, you gain something useful out of it!
 
 ### Useful Resources
+- [RegExr](https://regexr.com/) - This tool helps me learn and create Regex.
 
 ## Author
 [(Back to top)](#table-of-contents)
@@ -191,6 +193,8 @@ So, that's for the story! Hopefully, you gain something useful out of it!
 
 ## Acknowledgements
 [(Back to top)](#table-of-contents)
+
+I want to say thank you to the creator of RegExr, [@gskinner](https://github.com/gskinner). It helps me out to understand Regex and eventually helps me create my Regex for the first time.
 
 ## License
 [(Back to top)](#table-of-contents)
