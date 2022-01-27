@@ -107,7 +107,7 @@ body {
 .container__desktop {
   @include breakpoint-up("tiny") {
     flex-basis: 50%;
-    padding: rem(75);
+    padding: rem(65) rem(75) rem(75) rem(95);
   }
 }
 
