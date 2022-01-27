@@ -182,6 +182,7 @@ So, that's for the story! Hopefully, you gain something useful out of it!
 
 ### Useful Resources
 - [RegExr](https://regexr.com/) - This tool helps me learn and create Regex.
+- [Regular Expression - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) - I read on how to use the `test()` method.
 
 ## Author
 [(Back to top)](#table-of-contents)
