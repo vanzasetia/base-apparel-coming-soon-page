@@ -33,7 +33,9 @@ This the place where I document everything about this project. Feel free to take
 ```
 
 ## Colors
-I used all the color from the [`style-guide.md`](../style-guide.md).
+I used all the color from the [`style-guide.md`](../style-guide.md) and some additional colors:
+- rgb(242, 242, 242) - for the `::selection` color.
+- rgba(198, 110, 110, 0.25) - the button `box-shadow`.
 
 ## Font Family
 - Family: [Josefin Sans](https://fonts.google.com/specimen/Josefin+Sans)
