@@ -62,7 +62,7 @@ My users should be able to:
   - The email address is not formatted correctly
 
 ### Links
-- [🌐 Live Review](https://baseapparelfrontendmentor.netlify.app/)
+- [🌐 Live Review](https://baseapparelonline.netlify.app/)
 - [👨‍🏫 Frontend Mentor Solution Page]()
 - [📖 My Walkthrough]()
 
