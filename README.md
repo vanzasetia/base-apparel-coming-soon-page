@@ -1,4 +1,4 @@
-![banner](./images/banner.png)
+![It's finally done! Base apparel coming soon page challenge](./images/banner.png)
 
 <p align="left">
   <a href="https://www.frontendmentor.io/challenges?difficulties=1" target="_blank"><img src="https://img.shields.io/badge/Difficulty-Newbie-14C2C8?style=for-the-badge&logo=frontendmentor" alt="Difficulty"></a>
