@@ -31,12 +31,12 @@ html {
 }
 
 ::selection {
-  background-color: $dark-red;
+  background-color: rgb(190, 117, 117);
   color: rgb(242, 242, 242);
 }
 
 ::-moz-selection {
-  background-color: $dark-red;
+  background-color: rgb(190, 117, 117);
   color: rgb(242, 242, 242);
 }
 
