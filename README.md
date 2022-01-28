@@ -63,8 +63,7 @@ My users should be able to:
 
 ### Links
 - [🌐 Live Review](https://baseapparelonline.netlify.app/)
-- [👨‍🏫 Frontend Mentor Solution Page]()
-- [📖 My Walkthrough]()
+- [👨‍🏫 Frontend Mentor Solution Page](https://www.frontendmentor.io/solutions/base-apparel-coming-soon-page-html-css-sass-js-regex-lMR0PDSc7)
 
 ### Screenshots
 
