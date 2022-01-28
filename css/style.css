@@ -627,7 +627,7 @@ br + br {
   z-index: 200;
   background-color: #fafafa;
   padding: 1em 2em;
-  text-decoration: 0.1em solid initial;
+  text-decoration: 0.1em solid;
   font-size: 1.25rem;
   transform: translateX(-200%);
 }
