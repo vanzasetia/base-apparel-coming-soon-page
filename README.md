@@ -126,7 +126,7 @@ And the result was...
 
 I realized that it was a *dummy email address*, but it's not the point. As you can see that, the valid email address must contain the top-level domain (e.g. `.com`, `.org`, etc) at the end of the email.
 
-It's also a valid email address according to `input` with `type="email"`. So, what's the difference?
+However, it's a valid email address according to `input` with `type="email"`.
 
 #### Create Regex
 I finally decided to create my Regex after I couldn't find the Regex that I wanted.
