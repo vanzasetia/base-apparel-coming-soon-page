@@ -173,7 +173,7 @@ Also, I used the `^` and `$` in the Regex, so that **the user must follow the pa
 - hello@email@company
 - work@home.co.id.now
 
-So, that's for the story! Hopefully, you gain something useful out of it!
+So, that's it for the story! Hopefully, you gain something useful out of it!
 
 ### Useful Resources
 - [RegExr](https://regexr.com/) - This tool helps me learn and create Regex.
