@@ -136,7 +136,7 @@ After playing around with the RegExr, I finally was able to create the Regex tha
 Here's the Regex.
 ```javascript
 const emailValidation =
-  /^(?:[a-z0-9.]){2,30}@{1}(?:[a-z0-9-]){2,30}\.{1}(?:[a-z0-9]){2,3}(\.?((?:[a-z0-9]){2,3}))?$/;
+  /^(?:[a-z0-9.]){2,30}@{1}(?:[a-z0-9-]){2,30}\.{1}(?:[a-z0-9]){2,3}(?:\.(?:[a-z0-9]){2,3})?$/;
 ```
 
 Here what the Regex is doing:

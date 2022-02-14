@@ -20,7 +20,7 @@
   const validateEmail = e => {
     const email = heroInputEmail.value;
     const emailValidation =
-      /^(?:[a-z0-9.]){2,30}@{1}(?:[a-z0-9-]){2,30}\.{1}(?:[a-z0-9]){2,3}(\.?((?:[a-z0-9]){2,3}))?$/;
+      /^(?:[a-z0-9.]){2,30}@{1}(?:[a-z0-9-]){2,30}\.{1}(?:[a-z0-9]){2,3}(?:\.(?:[a-z0-9]){2,3})?$/;
     if (!emailValidation.test(email)) {
       e.preventDefault();
       showAlert();
