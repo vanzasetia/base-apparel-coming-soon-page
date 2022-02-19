@@ -76,6 +76,6 @@ These are the guidelines that I follow when I write the code.
 - [HTML Validator](https://validator.w3.org/nu/)
 - [Checklist - The A11Y Project](https://www.a11yproject.com/checklist/) - this checklist really improve the accessibility of my solution. I would recommend checking yours too!
 - [Card Validator | Twitter Developer](https://cards-dev.twitter.com/validator) - to see how my solution looks like when I share it.
-- [CSS Validator](https://jigsaw.w3.org/css-validator/validator) - [The website has valid CSS code](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fbaseapparelonline.netlify.app&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+- [CSS Validator](https://jigsaw.w3.org/css-validator/) - [The website has valid CSS code](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fbaseapparelonline.netlify.app&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 - [Facebook For Developer](https://developers.facebook.com/tools/debug/) - the same as the twitter card validator, but this one for Facebook.
 - [Meta Tags](https://metatags.io/) - Check how my website looks like when I share it on Google, Facebook, Twitter, Linkedin, Slack, and Pinterest
